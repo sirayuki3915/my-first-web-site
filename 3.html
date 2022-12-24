@@ -3,13 +3,24 @@
 <head>
     <title>WEB - JavaScript</title>
     <meta charest="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style-day.css">
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor = 'black';document.querySelector('body').style.color = 'white'">
-    <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black'">
+    <button id="night-button">night</button>
+    <button id="day-button">day</button>
+    <script>
+        const nightButton = document.getElementById('night-button');
+        nightButton.addEventListener('click', function() {
+            const stylesheetLink = document.getElementById('stylesheet');
+            stylesheetLink.href = 'style-night.css'
+        });
+        const dayButton = document.getElementById('day-button');
+        dayButton.addEventListener('click', function() {
+            const stylesheetLink = document.getElementById('stylesheet');
+            stylesheetLink.href = 'style-day.css'
+        });
+    </script>
     <div id="grid"></div>
         <ol>
             <li><a href="1.html">HTML</a></li>
