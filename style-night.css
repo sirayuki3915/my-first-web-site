@@ -3,6 +3,10 @@ body{
     background-color: black;
     color: white;
 }
+#night-button {
+    background-color: pink;
+    color:black;
+}
 title {
     color: white;
     text-decoration: none;
@@ -42,7 +46,4 @@ ol {
 ol {
     border-right: none;
     }
-h1 {
-    border-bottom: none;
-    } 
 }

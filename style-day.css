@@ -3,6 +3,10 @@ body{
     background-color: white;
     color: black;
 }
+#day-button {
+    background-color: pink;
+    color:black;
+}
 a {
     color: black;
     text-decoration: none;
@@ -37,7 +41,4 @@ ol {
 ol {
     border-right: none;
     }
-h1 {
-    border-bottom: none;
-    } 
 }
