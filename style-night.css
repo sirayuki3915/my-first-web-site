@@ -14,13 +14,13 @@ a {
 h1 {
     font-size:45px;
     text-align: center;
-    border-bottom:3px solid gray;
+    border-bottom:3px solid #BABABA;
     margin:0;
     padding: 20px;
 }
 ol {
     color: white;
-    border-right:3px solid gray;
+    border-right:3px solid #BABABA;
     width:100px;
     margin:0;
     padding:20px;

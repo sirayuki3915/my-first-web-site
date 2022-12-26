@@ -10,12 +10,12 @@ a {
 h1 {
     font-size:45px;
     text-align: center;
-    border-bottom:3px solid gray;
+    border-bottom:3px solid #4F4F4F;
     margin:0;
     padding: 20px;
 }
 ol {
-    border-right:3px solid gray;
+    border-right:3px solid #4F4F4F;
     width:100px;
     margin:0;
     padding:20px;
