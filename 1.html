@@ -7,26 +7,18 @@
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <button id="night-button">night</button>
-    <button id="day-button">day</button>
-    <script>
-        const nightButton = document.getElementById('night-button');
-        nightButton.addEventListener('click', function() {
-            const stylesheetLink = document.getElementById('stylesheet');
-            stylesheetLink.href = 'style-night.css'
-        });
-        const dayButton = document.getElementById('day-button');
-        dayButton.addEventListener('click', function() {
-            const stylesheetLink = document.getElementById('stylesheet');
-            stylesheetLink.href = 'style-day.css'
-        });
-    </script>
-    <div id="grid">
-        <ol>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
-        </ol>
+    <input type="button" value="night" onclick=" var target = document.querySelector('body'); if (this.value === 'night') {
+        target.style.backgroundColor = 'black'; target.style.color = 'white'
+        this.value = 'day';
+    } else {
+        target.style.backgroundColor = 'wthie'; target.style.color = 'black'
+        this.value = 'night'
+    }">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
         <div id="article">
             <h2>HTML</h2>
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
@@ -36,8 +28,6 @@
             </p>
         </div>
     </div>
-    <p>
-    </p>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
